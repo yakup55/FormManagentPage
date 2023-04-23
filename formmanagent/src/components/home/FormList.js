@@ -5,6 +5,7 @@ import Search from "../search/Search";
 
 export default function FormList() {
   const { forms } = useSelector((state) => state.form);
+  
   const dispacth = useDispatch();
   useEffect(() => {
     dispacth(getFormList());
