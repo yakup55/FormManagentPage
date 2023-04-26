@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Home from "../home/Home";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -9,13 +8,10 @@ export default function Navbar() {
     <div>
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <span  class="navbar-brand mb-0 h1">
+          <span onClick={() => navigate("/")} class="navbar-brand mb-0 h1">
             Navbar
           </span>
-          <h4
-            onClick={() => navigate("/formlist")}
-            class="navbar-brand mb-0 h1"
-          >
+          <h4 onClick={() => navigate("/")} class="navbar-brand mb-0 h1">
             Formlar
           </h4>
           <Button
